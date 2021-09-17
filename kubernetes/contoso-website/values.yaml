@@ -1,3 +1,4 @@
+---
 image:
   registry: contosocontainerregistry5581.azurecr.io
   name: contoso-website
