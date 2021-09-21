@@ -37,8 +37,8 @@ jobs:
           username: ${{secrets.ACR_LOGIN}}
           password: ${{secrets.ACR_PASSWORD}}
           registry: ${{ secrets.ACR_NAME }}
-          #tags: ${{secrets.ACR_NAME}}/contoso-website:latest,${{secrets.ACR_NAME}}/contoso-website:${{ steps.fetch_version.outputs.TAG }}
-          tags: ${{secrets.ACR_NAME}}/contoso-website:${GITHUB_REF##*/}
+          tags: ${{secrets.ACR_NAME}}/contoso-website:latest,${{secrets.ACR_NAME}}/contoso-website:${{ steps.fetch_version.outputs.TAG }}
+          #tags: ${{secrets.ACR_NAME}}/contoso-website:${GITHUB_REF##*/}
           repository: contoso-website
           #tag_with_ref: true
           push: true
