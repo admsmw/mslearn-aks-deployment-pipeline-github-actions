@@ -40,6 +40,7 @@ jobs:
           #tags: ${{secrets.ACR_NAME}}/contoso-website:latest,${{secrets.ACR_NAME}}/contoso-website:${{ steps.fetch_version.outputs.TAG }}
           repository: contoso-website
           tag_with_ref: true
+          push: true
           
   deploy:
     runs-on: ubuntu-latest
